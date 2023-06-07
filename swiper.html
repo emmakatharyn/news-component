@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swiper for SoNM</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="news-article">
+            <span class="news-date">June 7</span>
+            <h3 class="news-title">Title of Piece</h3>
+            <p class="news-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut eaque
+              quos fugit veniam quis aliquid, unde tempore suscipit! Blanditiis
+              error possimus nemo ducimus sequi voluptatibus, reiciendis
+              numquam! Amet, beatae facere!
+            </p>
+            <a href="#" class="news-link">Learn more</a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="news-article">
+            <span class="news-date">June 8</span>
+            <h3 class="news-title">Title of Piece</h3>
+            <p class="news-desc">
+              Veniam quis aliquid, unde tempore suscipit! Blanditiis error
+              possimus nemo ducimus sequi voluptatibus, reiciendis numquam!
+              Amet, beatae facere!
+            </p>
+            <a href="#" class="news-link">Learn more</a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="news-article">
+            <span class="news-date">June 9</span>
+            <h3 class="news-title">Title of Piece</h3>
+            <p class="news-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut eaque
+              quos fugit veniam quis aliquid, unde tempore suscipit! Blanditiis
+              error possimus nemo ducimus sequi voluptatibus, reiciendis
+              numquam! Amet, beatae facere!
+            </p>
+            <a href="#" class="news-link">Learn more</a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="news-article">
+            <span class="news-date">June 11</span>
+            <h3 class="news-title">Title of Piece</h3>
+            <p class="news-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut eaque
+              quos fugit veniam quis aliquid, unde tempore sequi voluptatibus,
+              reiciendis numquam! Amet, beatae facere!
+            </p>
+            <a href="#" class="news-link">Learn more</a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="news-article">
+            <span class="news-date">June 13</span>
+            <h3 class="news-title">Title of Piece</h3>
+            <p class="news-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut eaque
+              nde tempore suscipit! Blanditiis error possimus nemo numquam!
+              Amet, beatae facere! Lorem ipsum dolor sit amet. Lorem ipsum dolor
+              sit, amet consectetur adipisicing.
+            </p>
+            <a href="#" class="news-link">Learn more</a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="news-article">
+            <div class="news-heading">
+              <span class="news-date">June 7</span>
+              <h3 class="news-title">Title of Piece</h3>
+            </div>
+            <p class="news-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut eaque
+              quos fugit veniam quis aliquid, unde tempore suscipit! Blanditiis
+              error possimus nemo ducimus sequi voluptatibus, reiciendis
+              numquam! Amet, beatae facere!
+            </p>
+            <a href="#" class="news-link">Learn more</a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="news-article">
+            <span class="news-date">June 7</span>
+            <h3 class="news-title">Title of Piece</h3>
+            <p class="news-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut eaque
+              quos fugit veniam quis aliquid, unde tempore suscipit! Blanditiis
+              error possimus nemo ducimus sequi voluptatibus, reiciendis
+              numquam! Amet, beatae facere!
+            </p>
+            <a href="#" class="news-link">Learn more</a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="news-article">
+            <span class="news-date">June 7</span>
+            <h3 class="news-title">Title of Piece</h3>
+            <p class="news-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut eaque
+              quos fugit veniam quis aliquid, unde tempore suscipit! Blanditiis
+              error possimus nemo ducimus sequi voluptatibus, reiciendis
+              numquam! Amet, beatae facere!
+            </p>
+            <a href="#" class="news-link">Learn more</a>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+
+      <!-- scrollbar -->
+      <!-- <div class="swiper-scrollbar"></div> -->
+    </div>
+    <!-- navigation arrows -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <script>
+      const swiper = new Swiper(".swiper", {
+        // Optional parameters
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+        direction: "horizontal",
+        spaceBetween: 20,
+        loop: true,
+        // autoplay: {
+        //   delay: 5000,
+        //   disableOnInteraction: true,
+        // },
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        // And if we need scrollbar
+        // scrollbar: {
+        //   el: ".swiper-scrollbar",
+        // },
+      });
+    </script>
+  </body>
+</html>

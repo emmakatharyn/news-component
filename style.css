@@ -1,0 +1,58 @@
+.swiper {
+  width: 90%;
+  height: 300px;
+  position: relative; /* so that we can absolutely position the arrows */
+}
+
+.swiper-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.swiper-slide {
+  width: 300px;
+  background-color: pink;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute; /* added position absolute */
+  top: 50%; /*vertically center the arrows */
+  transform: translateY(-50%); /*vertically center the arrows */
+  width: 30px;
+  height: 30px;
+  background-color: #ccc;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.swiper-button-next {
+  right: 30px;
+}
+
+.swiper-button-prev {
+  left: 30px;
+}
+
+.news-article {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 8px;
+  background-color: #f1f1f1;
+  padding: 4px;
+  height: 240px;
+}
+
+.news-title {
+  margin: 0;
+}
+
+.news-link {
+  justify-self: flex-end;
+}
